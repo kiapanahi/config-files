@@ -118,9 +118,11 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# Go - GOPATH and extending PATH
-export GOPATH=$HOME/go
-export PATH=$PATH:$GOPATH/bin:/usr/local/go/bin
+# Golang stuff
+export PATH=$PATH:/usr/local/go/bin
+
+# Rust/Cargo stuff
+export PATH=$PATH:$HOME/.cargo/bin
 
 # pip - extending PATH with pip bin path 
 export PATH=$PATH:$HOME/.local/bin
